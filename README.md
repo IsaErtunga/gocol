@@ -1,2 +1,4 @@
 # gocol
-Collections in Go
+Collections in Go for personal use
+
+- Slice based stack
