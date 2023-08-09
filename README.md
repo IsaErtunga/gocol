@@ -1,0 +1,2 @@
+# gocol
+Collections in Go
