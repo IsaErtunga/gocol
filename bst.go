@@ -75,7 +75,16 @@ func (bst *BST[K, V]) Max() *BST[K, V] {
 	return travPtr
 }
 
-func (bst *BST[K, V]) Search() {
+func (bst *BST[K, V]) Search(key K) *BST[K, V] {
+	travPtr := bst.root
+	for travPtr != nil && travPtr.key != key {
+		if key < travPtr.key {
+			travPtr = travPtr.left
+		} else {
+			travPtr = travPtr.right
+		}
+	}
+	return travPtr
 }
 
 func (bst *BST[K, V]) Print() {

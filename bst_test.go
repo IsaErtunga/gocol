@@ -18,5 +18,7 @@ func TestBSTInsert(t *testing.T) {
 	if max := bst.Max(); max.key != 7 {
 		t.Fail()
 	}
-
+	if tr := bst.Search(6); tr.val != "d" {
+		t.Fail()
+	}
 }
